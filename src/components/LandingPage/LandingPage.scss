@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --primaryColor: hsl(241, 51%, 57%);
+    --hoverColor: hsl(226, 79%, 46%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+}
+
+.landingpage__wrapper {
+    background-color: rgb(6, 6, 34);
+    height: 100vh;
+    @media screen and (max-width: 425px) {
+        height: 130vh;
+    }
+}
+
+.landingpage__wrapper img {
+    width: 6vw;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    @media screen and (max-width: 700px) {
+        width: 11vw;
+    }
+}
+
+.landingpage__container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 100vw;
+    text-align: center;
+    flex-direction: column;
+    @media screen and (max-width: 700px) {
+        padding: 3.75rem 0.93rem; 
+        width: 100vw;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100vw;
+    }
+    .heading {
+        color: rgb(176, 198, 218);
+        font-size: 1.2rem;
+    }
+    .central__text {
+        color: white;
+        font-size: 2.3rem;
+        font-weight: 700;
+        @media screen and (max-width: 800px) and (min-width: 536px) {
+            font-size: 2.2rem;
+        }
+        @media screen and (max-width: 700px) and (min-width: 535px) {
+            font-size: 1.6rem;
+        }
+        @media screen and (max-width: 534px) and (min-width: 426px) {
+            font-size: 1.3rem;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 2rem;
+        }
+        // @media screen and (max-width: 565px) {
+        //     font-size: 1.4rem;
+        // }
+        // @media screen and (max-width: 445px) {
+        //     font-size: 1.3rem;
+        // }
+        // @media screen and (max-width: 415px) {
+        //     font-size: 1.18rem;
+        // }
+    }
+    .hiring {
+        color: rgb(176, 198, 218);
+        margin-right: 0.6rem;
+    }
+    .link {
+        text-decoration: none;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    .btn {
+        padding: .8rem;
+        background: var(--primaryColor);
+        border-radius: 0.83rem;
+        color: var(--whiteColor);
+        align-items: center;
+        margin: auto;
+        border: none;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 500;
+        min-width: 18%;
+        margin-top: 1rem;
+        gap: .5rem;
+        transition: .3s ease;
+        cursor: pointer;
+
+        .icon {
+            font-size: 1.56rem;
+            transition: .3s ease;
+            background: none;
+        }
+  
+        &:hover {
+            background: var(--hoverColor);
+            color: var(--whiteColor);
+            
+            .icon {
+              color: var(--whiteColor);
+              transform: translateX(0.31rem);
+            }
+        }
+    }
+    .footer-text {
+        color: rgb(176, 198, 218);
+        margin-top: 2.2rem;
+    }
+}
